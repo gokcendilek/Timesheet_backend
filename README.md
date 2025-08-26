@@ -25,7 +25,7 @@ Timesheet Search and Listing:
 - Users can search their past timesheet entries based on a date range.
 - The search results will be displayed in a table format.
 
-**Timesheet Update:
+Timesheet Update:
 - Users will be able to update previously entered timesheets after searching for them.
 
 **Timesheet Export**:
