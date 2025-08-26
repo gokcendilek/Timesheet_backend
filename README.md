@@ -1,12 +1,10 @@
 # Timesheet_backend
- Java Spring boot
-
 The backend is implemented using Java Spring Boot,  and PostgreSQL is used as the database.
 
 The application has two types of users: regular users and admins.  
 - Regular users can enter timesheets, search their entries, and export them (reporting).  
 - Admin users can search for all users and export their data.
- 1. User Registration and Login Page
+## 1. User Registration and Login Page
 - Registration Page:
   - Includes fields for username, email, and password.
   - The email and username must be unique when registering.
@@ -16,7 +14,7 @@ The application has two types of users: regular users and admins.
   - Upon login, the user's identity and roles are verified.
   - After a successful login, the user is redirected to the Timesheet entry page.
 
-2. Timesheet Application
+## 2. Timesheet Application
 - New Timesheet Entry:
   - The user can input fields such as date, start time, end time, and description.
 - After logging in, the user will be able to enter a new timesheet.  
@@ -31,11 +29,29 @@ Timesheet Update:
 **Timesheet Export**:
 - Users can export their search results in CSV or Excel format.
 
-3. Admin Panel
+## 3. Admin Panel
    
 **User Search and Listing**:
 - Admins can search for and list all users and their timesheet entries.
 - Search criteria include fields such as username, email, and registration date.
 - Admins can perform searches using any of these criteria.
 
-**Timesheet Export**:  
+**Timesheet Export**  
+
+## 4. Project Structure
+src/main/java/com/aksigorta/timesheet
+├─ config/        # Swagger, Web config
+├─ controller/    # AdminController, TimesheetController, UserController
+├─ model/         # User, Timesheet, Role, TimesheetDTO
+├─ repository/    # UserRepository, TimesheetRepository
+├─ security/      # JWT filter, handlers, SecurityConfig
+└─ service/       # UserService, TimesheetService, AdminService, UserDetailsServiceImpl
+
+ ##  5. Tech Stack
+- Java (tested with 11+, currently running on Java 22)
+- Spring Boot, Spring Security (JWT), Spring Data JPA
+- PostgreSQL
+- Swagger / OpenAPI
+
+  
+
