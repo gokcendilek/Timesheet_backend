@@ -7,7 +7,7 @@ The application has two types of users: regular users and admins.
 - Regular users can enter timesheets, search their entries, and export them (reporting).  
 - Admin users can search for all users and export their data.
  1. User Registration and Login Page
-- Registration Page**:
+- Registration Page:
   - Includes fields for username, email, and password.
   - The email and username must be unique when registering.
   - The password must be at least 8 characters long and contain one uppercase letter, one lowercase letter, and one special character.
