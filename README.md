@@ -39,6 +39,7 @@ Timesheet Update:
 **Timesheet Export**  
 
 ## 4. Project Structure
+```
 src/main/java/com/aksigorta/timesheet
 ├─ config/        # Swagger, Web config
 ├─ controller/    # AdminController, TimesheetController, UserController
@@ -46,7 +47,7 @@ src/main/java/com/aksigorta/timesheet
 ├─ repository/    # UserRepository, TimesheetRepository
 ├─ security/      # JWT filter, handlers, SecurityConfig
 └─ service/       # UserService, TimesheetService, AdminService, UserDetailsServiceImpl
-
+```
  ##  5. Tech Stack
 - Java (tested with 11+, currently running on Java 22)
 - Spring Boot, Spring Security (JWT), Spring Data JPA
